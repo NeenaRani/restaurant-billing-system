@@ -1,0 +1,29 @@
+#include<stdio.h>
+#include<conio.h>
+void main()
+{
+  int price,quantity;
+  char item_name[10];
+  printf("enter item name according to customer's order:");
+  scanf("%s",&item_name);
+  printf("enter price:");
+  scanf("%d",&price);
+  printf("enter quantity required:");
+  scanf("%d",&quantity);
+  billing(price,item_name);
+  getch();
+}
+billing(int price,item_name[10])
+{
+  int bill=0;
+  for(int i=0;i<quantity;i++)
+  {
+    bill=bill+price;
+  }
+  printf("total bill=",bill);
+}
+
+
+
+
+
